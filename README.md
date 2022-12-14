@@ -3,10 +3,12 @@ In this project, we will explore a fictional dataset and perform a comprehensive
 
 ## Dataset
 Data Source: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
-Source Format: **_csv_**
-Dependent Variable : **_Attrition_** - (Boolean Y/N)
-Independent Variable(s): **_35_** (e.g. basic info, work Info, satisfaction, salary and time related)
 
+Source Format: **_csv_**
+
+Dependent Variable : **_Attrition_** - (Boolean Y/N)
+
+Independent Variable(s): **_35_** (e.g. basic info, work Info, satisfaction, salary and time related)
 
 ## Project Content
 1. Exploring Data
