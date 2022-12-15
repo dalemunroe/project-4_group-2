@@ -69,6 +69,7 @@ Another metric we can use to evaluate the performance of a model is ROC (receive
 
 ## 6. Data Augmentation
 
+https://public.tableau.com/app/profile/dale.munroe/viz/Project_4g2/Dashboard12?publish=yes
 
 **Imbalanced Data:**
 
