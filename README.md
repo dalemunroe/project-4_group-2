@@ -55,8 +55,30 @@ As a first step, we will apply a set of pre-selected models to the data without 
 
 ![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/ML_performance.png)
 
-## 4. Model training and performance evaluation
+## 5. Model training and performance evaluation
 There are different metrics that can be used to evaluate the performance of a model. In this project, we are trying to solve a classification problem, so we will use accuracy as one of our evaluation metrics. However, for imbalanced data, accuracy alone may not be sufficient. In such cases, we need to pay more attention to metrics like precision and recall. For example, if we only have one employee who exits in our dataset, and we predict that everyone will stay, we will have a model with 99% accuracy, but it will not be able to help us identify the employee who plans to exit. Therefore, we will use precision, recall, and f1 score as our primary evaluation metrics, and we will use confusion matrix graphs with labels of actual and predicted values to visualize the results.
 
 **Confusion Matrix:**
 
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/Confusion%20Matrix.png)
+
+**ROC Curve Analysis:**
+Another metric we can use to evaluate the performance of a model is ROC (receiver operating characteristic) analysis. This metric measures how well the model is able to distinguish between true and false labels.
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/ROC_curve_analysis.png)
+
+## 6. Data Augmentation
+
+
+**Imbalanced Data:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/imbalanced_data.png)
+
+**balanced Data:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/imbalanced_data.png)
+
+## 7. Feature importance
+The feature importance shows how important each feature is and the way it can change the performance of the ML model.
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/feature_importance.png)
