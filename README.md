@@ -32,3 +32,54 @@ df = df.drop(['Over18','EmployeeNumber', 'EmployeeCount', 'StandardHours'], axis
 print(df.shape)
 df.head()
 ~~~~
+
+## 2. Distribution of the dataset
+All of our numerical features have been preprocessed to remove missing or duplicate data. As a result, the distribution of these features is consistent.
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/Age_distribution.png)
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/dataset_distribution.png)
+
+## 3. Feature engineering
+We used a correlation matrix to identify relationships between the features and the target variable. We considered two features to be correlated if their correlation score was greater than 0.5. 
+For non-numerical features, we applied one-hot encoding to convert them into numerical values.
+
+**Correlation Matrix:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/correlation_heatmap.png)
+
+## 4. Data Scaling
+As a first step, we will apply a set of pre-selected models to the data without performing any hyperparameter tuning. This "naive" approach will allow us to get a rough idea of the performance of each model. The models we will use include linear models, tree-based models, ensemble learning models, and deep learning models.
+
+**Model Training:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/ML_performance.png)
+
+## 5. Model training and performance evaluation
+There are different metrics that can be used to evaluate the performance of a model. In this project, we are trying to solve a classification problem, so we will use accuracy as one of our evaluation metrics. However, for imbalanced data, accuracy alone may not be sufficient. In such cases, we need to pay more attention to metrics like precision and recall. For example, if we only have one employee who exits in our dataset, and we predict that everyone will stay, we will have a model with 99% accuracy, but it will not be able to help us identify the employee who plans to exit. Therefore, we will use precision, recall, and f1 score as our primary evaluation metrics, and we will use confusion matrix graphs with labels of actual and predicted values to visualize the results.
+
+**Confusion Matrix:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/Confusion%20Matrix.png)
+
+**ROC Curve Analysis:**
+Another metric we can use to evaluate the performance of a model is ROC (receiver operating characteristic) analysis. This metric measures how well the model is able to distinguish between true and false labels.
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/ROC_curve_analysis.png)
+
+## 6. Data Augmentation
+
+https://public.tableau.com/app/profile/dale.munroe/viz/Project_4g2/Dashboard12?publish=yes
+
+**Imbalanced Data:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/imbalanced_data.png)
+
+**balanced Data:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/imbalanced_data.png)
+
+## 7. Feature importance
+The feature importance shows how important each feature is and the way it can change the performance of the ML model.
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/feature_importance.png)
