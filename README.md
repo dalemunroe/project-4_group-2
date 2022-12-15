@@ -34,6 +34,27 @@ df.head()
 ~~~~
 
 ## 2. Distribution of the dataset
+All of our numerical features have been preprocessed to remove missing or duplicate data. As a result, the distribution of these features is consistent.
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/Age_distribution.png)
 
 ![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/dataset_distribution.png)
+
+## 3. Feature engineering
+We used a correlation matrix to identify relationships between the features and the target variable. We considered two features to be correlated if their correlation score was greater than 0.5. 
+For non-numerical features, we applied one-hot encoding to convert them into numerical values.
+
+**Correlation Matrix:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/correlation_heatmap.png)
+
+## 4. Data Scaling
+As a first step, we will apply a set of pre-selected models to the data without performing any hyperparameter tuning. This "naive" approach will allow us to get a rough idea of the performance of each model. The models we will use include linear models, tree-based models, ensemble learning models, and deep learning models.
+
+**Model Training:**
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/ML_performance.png)
+
+
+The following graphs show how different hyperparameters affect the performance of logistic regression and k-nearest neighbors models.
 
