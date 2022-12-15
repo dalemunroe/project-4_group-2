@@ -32,3 +32,8 @@ df = df.drop(['Over18','EmployeeNumber', 'EmployeeCount', 'StandardHours'], axis
 print(df.shape)
 df.head()
 ~~~~
+
+## 2. Distribution of the dataset
+
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/dataset_distribution.png)
+
