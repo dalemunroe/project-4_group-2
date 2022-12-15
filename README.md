@@ -55,6 +55,8 @@ As a first step, we will apply a set of pre-selected models to the data without 
 
 ![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/ML_performance.png)
 
+## 4. Model training and performance evaluation
+There are different metrics that can be used to evaluate the performance of a model. In this project, we are trying to solve a classification problem, so we will use accuracy as one of our evaluation metrics. However, for imbalanced data, accuracy alone may not be sufficient. In such cases, we need to pay more attention to metrics like precision and recall. For example, if we only have one employee who exits in our dataset, and we predict that everyone will stay, we will have a model with 99% accuracy, but it will not be able to help us identify the employee who plans to exit. Therefore, we will use precision, recall, and f1 score as our primary evaluation metrics, and we will use confusion matrix graphs with labels of actual and predicted values to visualize the results.
 
-The following graphs show how different hyperparameters affect the performance of logistic regression and k-nearest neighbors models.
+**Confusion Matrix:**
 
