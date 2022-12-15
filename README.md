@@ -75,9 +75,9 @@ https://public.tableau.com/app/profile/dale.munroe/viz/Project_4g2/Dashboard12?p
 
 ![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/imbalanced_data.png)
 
-**balanced Data:**
+**Balanced Data:**
 
-![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/imbalanced_data.png)
+![cm_lr](https://github.com/dalemunroe/project-4_group-2/blob/main/outputs/balanced_data.png)
 
 ## 7. Feature importance
 The feature importance shows how important each feature is and the way it can change the performance of the ML model.
